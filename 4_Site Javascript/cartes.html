@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Cartes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pics/LogoIIM.png">
+</head>
+<body>
+    <!--Header contenant les tabs-->
+    <header id="header" class="light_hr">
+        <ul class="flex_container">
+            <li class="tab"><a href="cartes.html" onclick="sendCartes()">Cartes</a></li>
+            <li class="tab"><a href="index.html">Menu</a></li>
+            <li class="tab"><a href="favorite.html" onclick="sendFavorites()">Favoris</a></li>
+        </ul>
+    </header>
+    <!--Deuxième menu, les cartes, avec l'api-->
+    <main id="cartes_bg" class="light_bg"></div>
+        <div id="cartes">
+            <!--Swiper-->
+            <div class="swiper mySwiper"> 
+                <div class="swiper-wrapper">
+                <div id="slide1" class="swiper-slide"><div><p id="text_chara1">--</p></div><img id="image_chara1" src="" alt="image"></div>
+                <div id="slide2" class="swiper-slide"><div><p id="text_chara2">--</p></div><img id="image_chara2" src="" alt="image"></div>
+                <div id="slide3" class="swiper-slide"><div><p id="text_chara3">--</p></div><img id="image_chara3" src="" alt="image"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div>
+                <p class="text3">Toutes les images situées ci-dessus sont issues du site https://hp-api.lainocs.fr via un API.</p>
+            </div>
+        </div>
+    </main>
+    <!--Footer pour le pied de page-->
+    <footer id="footer" class="light_fr">
+        <p>Mentions Légales - Elouan LE STRAT - Restart 2024</p>
+    </footer>
+    <!--Lien avec les scripts js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="cartes.js"></script>
+</body>
+</html>

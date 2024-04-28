@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Favoris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pics/LogoIIM.png">
+</head>
+<body>
+    <!--Header contenant les tabs-->
+    <header id="header" class="light_hr">
+        <ul class="flex_container">
+            <li class="tab"><a href="cartes.html" onclick="sendCartes()">Cartes</a></li>
+            <li class="tab"><a href="index.html">Menu</a></li>
+            <li class="tab"><a href="favorite.html" onclick="sendFavorites()">Favoris</a></li>
+        </ul>
+    </header>
+    <!--Troisième menu, favoris-->
+    <main id="favoris_bg" class="light_bg"></div>
+        <div id="favoris">
+            <h1 class="title">Mes Favoris</h1>
+           <div id="favorites"></div> <!--Div vide dans laquelle se glissent les informations trouvées dans la base de donnée-->
+           <form> <!--Form grâce auquel on envoie des informations à la base de donnée-->
+            <input type="text" name="favorite"/>
+            <button type="button" onclick="sendFavorite()">
+            Ajouter aux favoris
+            </button>
+            </form>
+            <!--Informations pour l'utilisateur et bouton pour la liste des personnages-->
+            <p class="italic">Ecrivez votre personnage dans le format prénom-nom, tout en minuscule</p>
+            <div class="padding"><a onclick="showList()">Afficher la liste des personnages</a></div>
+            <div id="list" class="unactive"><p>harry-potter, sirius-black, lord-voldemort, rubeus-hagrid</p></div>
+        </div>
+        <!--Footer pour le pied de page-->
+        <footer id="footer" class="light_fr">
+            <p>Mentions Légales - Elouan LE STRAT - Restart 2024</p>
+        </footer>
+    </main>
+    <!--Lien avec les scripts js--> 
+    <script src="favorite.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renommer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pics/LogoIIM.png">
+</head>
+<body>
+    <!--Header contenant les tabs-->
+    <header id="header" class="light_hr">
+        <ul class="flex_container">
+            <li class="tab"><a href="cartes.html">Cartes</a></li>
+            <li class="tab"><a href="index.html">Menu</a></li>
+            <li class="tab"><a href="favorite.html">Favoris</a></li>
+        </ul>
+    </header>
+    <!--Bloc avec les options de navigation et la barre où rentrer le nouveau nom-->
+    <main class="light_bg">
+        <form class="flex_container1">
+            <a href="favorite.html">Retour</a>
+            <input 
+                type="text"
+                name="favorite"
+            />
+            <button
+                type="button"
+                onclick="updateFavorite()"
+            >
+                Renommer un favori
+            </button>
+        </form>
+        <!--Footer pour le pied de page-->
+        <footer id="footer" class="light_fr">
+            <p>Mentions Légales - Elouan LE STRAT - Restart 2024</p>
+        </footer>
+    </main>
+    <script src="favoris.js"></script>
+</body>
+</html>

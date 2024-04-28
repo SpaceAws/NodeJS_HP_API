@@ -1,0 +1,187 @@
+/*Base commune à tous les sites*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono";
+}
+
+/*Les classes light_nomDeContenu affichent le texte en mode jour via le javascript, inversement pour les classes dark_nomDuContenu*/
+/*Mise en page du header*/
+header {
+    height: 100px;
+    text-align: center;
+}
+.light_hr {
+    background-color: rgb(228, 228, 199);
+    color: black;
+}
+
+
+/*Mise en page du bouton pour le changement mode nuit/mode jour*/
+#button {
+    width: 150px;
+    height: 50px;
+}
+.light_bn {
+    background-color: beige;
+    color: black;
+}
+
+
+/*Mise en page du main*/
+.flex_container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.flex_container1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.italic {
+    font-style: italic;
+    font-size: 14px;
+}
+.padding {
+    padding: 20px;
+}
+.padding_top {
+    padding : 10px;
+    padding-top: 50px;
+}
+.padding_side {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.active {
+    display: block;
+}
+.unactive {
+    display: none;
+}
+.light_bg {
+    background-color: beige;
+    color: black;
+}
+
+/*Menu*/
+#menu_bg{
+    text-align: center;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+/*Cartes*/
+#cartes_bg{
+    text-align: center;
+}
+#cartes {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+/*Favoris*/
+#favoris_bg, #favorite{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.link {
+    text-decoration: none;
+    font-weight: 900;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+}
+form {
+    padding: 20px;
+}
+.title {
+    padding: 20px;
+}
+
+
+/*Mise en page des textes*/
+#text {
+    font-size: 40px;
+}
+.text1 {
+    font-size: 20px;
+    padding: 170px;
+}
+.text2, #text_chara1, #text_chara2, #text_chara3 {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+.text3 {
+    padding: 20px;
+    font-style: italic;
+}
+
+
+/*Mise en page des tabs*/
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a :hover {
+    text-decoration: underline;
+}
+.tab {
+    padding-top: 20px;
+    font-size: 24px;
+}
+.tab :hover {
+    text-decoration: underline;
+}
+
+
+/*Mise en page du footer*/
+footer {
+    padding: 20px;
+    text-align: center;
+}
+.light_fr {
+    background-color: rgb(228, 228, 199);
+    color: black;
+}
+.dark_fr {
+    background-color: rgb(15, 15, 78);
+    color: white;
+}
+
+
+/*Swiper*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.swiper-slide img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+#image_chara1, #image_chara2, #image_chara3 {
+    border: 3px solid #000;
+}

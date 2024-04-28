@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!--Mise en place du nom du site, de l'icône et des références css-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site alternatif de l'IIM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pics/LogoIIM.png">
+</head>
+<body>
+    <!--Header contenant les tabs-->
+    <header id="header" class="light_hr">
+        <ul class="flex_container">
+            <li class="tab"><a href="cartes.html" onclick="sendCartes()">Cartes</a></li>
+            <li class="tab"><a href="index.html">Menu</a></li>
+            <li class="tab"><a href="favorite.html" onclick="sendFavorites()">Favoris</a></li>
+        </ul>
+    </header>
+    <!--Premier menu, main menu-->
+    <main id="menu_bg" class="light_bg">
+        <div id="menu">
+            <div class="flex_container">
+                <img src="pics/de_vinci_light.png" alt="IIM digital school" id="img1" class="light_img" width="50px" height="50px">
+                <p id="text" class="text">IIM Digital School</p>
+                <img src="pics/de_vinci_light.png" alt="IIM digital school" id="img2" class="light_img" width="50px" height="50px">
+            </div>
+            <!--Swiper-->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div id="slide1" class="swiper-slide"><div><p class="text2">La Défense</p></div><img src="pics/iim1.webp" alt="iim"></div>
+                <div id="slide2" class="swiper-slide"><div><p class="text2">Nantes</p></div><img src="pics/iim2.jpg" alt="iim"></div>
+                <div id="slide3" class="swiper-slide"><div><p class="text2">Campus de l'arche</p></div><img src="pics/iim3.webp" alt="iim"></div>
+                <div id="slide4" class="swiper-slide"><div><p class="text2">Campus De Vinci</p></div><img src="pics/iim4.jpg" alt="iim"></div>
+                <div id="slide5" class="swiper-slide"><div><p class="text2">L'amphi'</p></div><img src="pics/iim5.jpg" alt="iim"></div>
+                <div id="slide6" class="swiper-slide"><div><p class="text2">Le campus de l'arche</p></div><img src="pics/iim_digital_school.webp" alt="iim"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </main>
+    <!--Footer pour le pied de page-->
+    <footer id="footer" class="light_fr">
+        <p>Mentions Légales - Elouan LE STRAT - Restart 2024</p>
+    </footer>
+    <!--Lien avec les scripts js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
